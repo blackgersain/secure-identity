@@ -14,3 +14,13 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.cordova-camera-capture {
+    text-align: center;
+    top: 10rem;
+}
+
+video {
+    width: 640px;
+    height: 480px;
+}

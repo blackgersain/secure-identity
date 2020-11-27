@@ -1,0 +1,41 @@
+page-image-capture { 
+}
+
+.cordova-camera-capture {
+    display: grid;
+}
+
+.cordova-camera-capture video {
+    text-align: center;
+    margin: auto;
+}
+
+.cordova-camera-capture button {
+    align-items: center;
+    border-sizing: border-box;
+    border-radius: 2px;
+    overflow: hidden;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #488aff;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: -webkit-baseline-middle;
+    font-kerning: none;
+    border: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    width: 20rem;
+    margin: 2rem auto auto auto;
+    text-align: center;
+    display: inherit;
+}

@@ -1,3 +1,27 @@
 page-home {
+    div {
+        display: flex;
 
+        div {
+            img {
+                width: 40rem;
+                height: 40rem;
+                padding: 3rem;
+                margin: auto;
+            }
+        }
+       
+    }
+}
+
+.div-face {
+    display: grid;
+    width: 40%;
+    margin: auto;
+}
+
+.div-fingerprint {
+    display: grid;
+    width: 40%;
+    margin: auto;
 }

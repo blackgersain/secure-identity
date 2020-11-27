@@ -1,14 +1,47 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+    <h1>Validar Identidad</h1>
+
+    <form [formGroup]="formGroup">
+        <ion-list>
+            <ion-item>
+                <ion-label>Nombres</ion-label>
+                <ion-input type="text" formControlName="nombreFormCtrl" disabled></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+                <ion-label>Apellidos</ion-label>
+                <ion-input type="text" formControlName="apellidoFormCtrl" disabled></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-item>
+                <ion-label>Documento Identidad</ion-label>
+                <ion-input type="text" formControlName="documentoIdentidadFormCtrl"></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-item>
+            <ion-label>Id Fórmula</ion-label>
+            <ion-input type="text" formControlName="idFormulaFormCtrl"></ion-input>
+        </ion-item>
+    </form>
+
+    <div>
+        <div class="div-face">
+            <img [src]="faceImage" alt="image not found">
+    
+            <button ion-button (click)="captureImage()">Capturar Imagen</button>
+        </div>
+    
+        <div class="div-fingerprint">
+            <img  src="../../assets/imgs/fingerprint.jpg" alt="image not found">
+    
+            <button ion-button (click)="captureFingerprint()">Capturar Huella</button>
+        </div>
+    </div>
+    
+    <button ion-button (click)="validarIdentidad()">Validar Identidad</button>
 </ion-content>
